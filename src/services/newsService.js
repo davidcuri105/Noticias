@@ -7,7 +7,7 @@ export const getNews = async (category = 'general') => {
   try {
     const response = await axios.get(`${BASE_URL}`, {
       params: {
-        country: 'us', // Puedes cambiarlo a otro país si deseas
+        country: 'us', 
         category,
         apiKey: API_KEY,
       },
